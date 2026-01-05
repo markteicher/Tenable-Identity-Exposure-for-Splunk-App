@@ -1,29 +1,79 @@
 ```mermaid
 flowchart LR
-    subgraph TIE["Tenable Identity Exposure (Alsid)"]
-        T1["Audience: Executives / Auditors"]
-        T2["Access Model: Admin-only UI"]
-        T3["Data Access: Limited export (CSV focus)"]
-        T4["Visualization: Pre-built widgets (static)"]
-        T5["Analysis Depth: Opinionated risk summaries"]
-        T6["Operational Use: Low outside admin team"]
-        T7["Marketing Positioning: Identity Risk Platform"]
-    end
 
-    subgraph BH["BloodHound (Enterprise Edition)"]
-        B1["Audience: Security Engineers / Red Teams"]
-        B2["Access Model: Broad RBAC / Read-only views"]
-        B3["Data Access: Full graph + API access"]
-        B4["Visualization: Interactive attack graphs"]
-        B5["Analysis Depth: Ground-truth attack paths"]
-        B6["Operational Use: High across security org"]
-        B7["Positioning: Active Directory Attack Path Analysis"]
-    end
+%% Columns
+subgraph COL1["Capability"]
+    C1["Data Collection Method"]
+    C2["Deployment Model"]
+    C3["Data Ownership"]
+    C4["Export / API Access"]
+    C5["Executive Accessibility"]
+    C6["Operational Usability"]
+    C7["Attack Path Fidelity"]
+    C8["Real-Time Graph Analysis"]
+    C9["RBAC / Read-Only Access"]
+    C10["Third-Party Integration"]
+    C11["Cost Transparency"]
+end
 
-    T1 --- B1
-    T2 --- B2
-    T3 --- B3
-    T4 --- B4
-    T5 --- B5
-    T6 --- B6
-    T7 --- B7
+subgraph COL2["Tenable Identity Exposure (Alsid)"]
+    T1["Relay-based collectors"]
+    T2["Centralized SaaS + Relays"]
+    T3["Tenable-controlled model"]
+    T4["CSV-centric, limited APIs"]
+    T5["Admin-only visibility"]
+    T6["Low outside admins"]
+    T7["Abstracted risk modeling"]
+    T8["No true graph traversal"]
+    T9["Limited / admin-focused"]
+    T10["External BI required"]
+    T11["High / opaque"]
+end
+
+subgraph COL3["BloodHound Enterprise"]
+    B1["Native AD telemetry"]
+    B2["On-prem / hybrid"]
+    B3["Customer-owned graph"]
+    B4["Full API + graph access"]
+    B5["Exec views via RBAC"]
+    B6["High across teams"]
+    B7["Ground-truth attack paths"]
+    B8["Live graph traversal"]
+    B9["Strong RBAC / read-only"]
+    B10["SIEM / SOAR / API-native"]
+    B11["Transparent / role-based"]
+end
+
+%% Row alignment
+C1 --- T1
+C1 --- B1
+
+C2 --- T2
+C2 --- B2
+
+C3 --- T3
+C3 --- B3
+
+C4 --- T4
+C4 --- B4
+
+C5 --- T5
+C5 --- B5
+
+C6 --- T6
+C6 --- B6
+
+C7 --- T7
+C7 --- B7
+
+C8 --- T8
+C8 --- B8
+
+C9 --- T9
+C9 --- B9
+
+C10 --- T10
+C10 --- B10
+
+C11 --- T11
+C11 --- B11
