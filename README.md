@@ -50,6 +50,58 @@ This app is designed to extend Tenable Identity Exposure data beyond administrat
 | 🛡️ Admin Monitoring | Native and delegated admin metrics |
 | 🔁 Data Freshness | Collection status and ingestion health |
 
+
+## Dashboards
+
+| Dashboard | Description |
+|---------|-------------|
+| **Overview** | Executive summary of identity exposure |
+| **AD Risk 360** | Global identity risk and severity |
+| **Indicators of Exposure** | IoE breakdown and trends |
+| **Indicators of Attack** | IoA incidents and analysis |
+| **Privileged Accounts** | Admin and shadow admin monitoring |
+| **User Monitoring** | User evolution and categorization |
+| **Domain Health** | Domain-level compliance and risk |
+| **Activity Logs** | Administrative actions |
+| **Operations** | Ingestion metrics and health |
+| **Help** | Identity risk glossary and guidance |
+
+## Sourcetypes
+
+| Sourcetype | Description |
+|-----------|-------------|
+| `tenable:tie:domains` | Domain metadata |
+| `tenable:tie:users` | User inventory |
+| `tenable:tie:groups` | Group relationships |
+| `tenable:tie:computers` | Computer accounts |
+| `tenable:tie:privileged_accounts` | Privileged identities |
+| `tenable:tie:ioe` | Indicators of Exposure |
+| `tenable:tie:ioa` | Indicators of Attack |
+| `tenable:tie:activity_logs` | Administrative activity |
+| `tenable:tie:license` | License and usage data |
+
+## Requirements
+- Splunk Enterprise 8.0+ or Splunk Cloud
+- Python 3.x (bundled with Splunk)
+- Tenable Identity Exposure API access
+
+## AppInspect Compliance
+- ✅ Proper Splunk app structure
+- ✅ No hardcoded credentials
+- ✅ Inputs disabled by default
+- ✅ Cloud-compatible configuration
+- ✅ Setup validation
+- ✅ README documentation
+
+## Support
+- Tenable Identity Exposure Documentation: https://docs.tenable.com/identity-exposure/
+- Splunk Documentation: https://docs.splunk.com
+
+## License
+Apache License 2.0
+
+
+
 ### 🚀 Deployment
 | Feature | Description |
 |--------|-------------|
