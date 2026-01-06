@@ -1,0 +1,80 @@
+Tenable_Identity_Exposure_For_Splunk/
+├── app.manifest
+├── LICENSE
+├── README.md
+│
+├── bin/
+│   ├── tenable_identity_input.py
+│   ├── tenable_identity_api.py
+│   ├── tenable_identity_setup_handler.py
+│   ├── tenable_identity_validation.py
+│   ├── tenable_identity_license.py
+│   ├── tenable_identity_users.py
+│   ├── tenable_identity_domains.py
+│   ├── tenable_identity_deviances.py
+│   ├── tenable_identity_indicators_of_attack.py
+│   ├── tenable_identity_indicators_of_exposure.py
+│   ├── tenable_identity_collectors.py
+│   ├── tenable_identity_health.py
+│   ├── tenable_identity_activity_log.py
+│   └── __init__.py
+│
+├── default/
+│   ├── app.conf
+│   ├── tenable_identity.conf
+│   ├── indexes.conf
+│   ├── inputs.conf
+│   ├── macros.conf
+│   ├── props.conf
+│   ├── transforms.conf
+│   ├── savedsearches.conf
+│   ├── server.conf
+│   ├── web.conf
+│   ├── restmap.conf
+│   ├── alert_actions.conf
+│   │
+│   └── data/
+│       └── ui/
+│           ├── nav/
+│           │   └── default.xml
+│           │
+│           └── views/
+│               ├── setup.xml
+│               ├── tie_overview.xml
+│               ├── tie_compliance.xml
+│               ├── tie_risk_360.xml
+│               ├── tie_password_risk.xml
+│               ├── tie_user_monitoring.xml
+│               ├── tie_native_admin_monitoring.xml
+│               ├── tie_indicators_of_attack.xml
+│               ├── tie_indicators_of_exposure.xml
+│               ├── tie_directory_health.xml
+│               ├── tie_deviance_trending.xml
+│               ├── tie_domains.xml
+│               ├── tie_assets.xml
+│               ├── tie_collectors.xml
+│               ├── tie_users.xml
+│               ├── tie_activity_logs.xml
+│               ├── tie_health.xml
+│               ├── tie_operations.xml
+│               ├── tie_logs.xml
+│               └── tie_help.xml
+│
+├── metadata/
+│   ├── default.meta
+│   └── local.meta
+│
+├── local/
+│   └── inputs.conf.example
+│
+├── static/
+│   ├── appIcon.png
+│   ├── appIcon_2x.png
+│   ├── appIconAlt.png
+│   └── appIconAlt_2x.png
+│
+└── README/
+    ├── tenable_identity.conf.spec
+    ├── inputs.conf.spec
+    ├── alert_actions.conf.spec
+    └── restmap.conf.spec
