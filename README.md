@@ -1,5 +1,4 @@
-# Tenable-Identity-Exposure-Utilities
-Tenable Identity Exposure Utilities
+# Tenable Identity Exposure for Splunk
 
 
 ⚠️ Disclaimer
@@ -11,8 +10,6 @@ Use of this software is not covered by any license, warranty, or support agreeme
 
 Neither Tenable Identity Exposure nor BloodHound provides true executive dashboards.
 
-
-# Tenable Identity Exposure for Splunk
 
 ## Overview
 Full Splunk App for **Tenable Identity Exposure**.  
