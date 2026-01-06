@@ -34,8 +34,6 @@ A numerical score (0–100) calculated by Tenable Identity Exposure based on det
 ### **Critical Indicator**
 A high-severity security condition identified by Tenable Identity Exposure that represents an immediate or high-impact risk to identity security.
 
-### **Crown Jewel Asset**
-A highly sensitive system, account, or resource whose compromise would have significant operational or security impact, such as domain controllers or privileged service accounts.
 
 ---
 
