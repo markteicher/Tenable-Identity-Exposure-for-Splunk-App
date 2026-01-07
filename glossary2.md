@@ -462,3 +462,253 @@ Unsuccessful attempt to reset authentication failure counters.
 
 ### Failed authentication
 Unsuccessful authentication attempt due to invalid credentials or policy restrictions.
+
+
+## TLS requirements
+Minimum Transport Layer Security version and configuration required to secure communications between Tenable Identity Exposure components.
+
+## Cipher Suites
+Approved cryptographic algorithms used to establish secure TLS connections.
+
+## Secure Relay
+A hardened communication component that securely transfers identity data from on-premises environments to Tenable Identity Exposure.
+
+## Cryptographic settings
+Configuration parameters governing encryption, hashing, and key management used by the platform.
+
+## Virtual machine requirements
+Hardware and software specifications required to deploy Tenable Identity Exposure components on virtual machines.
+
+## Allowed files and processes
+List of files and executable processes permitted to run for Tenable Identity Exposure components.
+
+## SAML
+Security Assertion Markup Language used for federated authentication to the Tenable Identity Exposure platform.
+
+## Tenable Identity Exposure account
+A tenant-level account representing an organization within Tenable Identity Exposure.
+
+## Tenable Identity Exposure User Portal
+The web-based interface used to access dashboards, investigations, and remediation guidance.
+
+## Trusted Certificates
+Digital certificates trusted by Tenable Identity Exposure to validate encrypted communications.
+
+## Tenable Identity Exposure Insights
+Contextual risk intelligence and recommendations derived from identity exposure analysis.
+
+## Prioritization and Remediation
+Workflow that ranks identity risks and provides guidance to reduce exposure.
+
+## Top Risks
+Highest-priority identity-related risks detected in the environment.
+
+## Exposure Signals
+A combination of correlated weaknesses that collectively represent a significant identity risk.
+
+## If You Have 5 Minutes
+A curated view highlighting the most critical actions requiring immediate attention.
+
+## Demographics
+Statistical breakdown of identities, accounts, and roles within the environment.
+
+## Finding Trends
+Historical analysis showing how identity risks evolve over time.
+
+## Exposure Center Overview
+Centralized view summarizing identity exposure posture across environments.
+
+## Exposure Instance Details
+Detailed information about a specific detected exposure.
+
+## Asset Criticality Rating (ACR)
+Score representing the business importance of an asset.
+
+## Remediation Cost
+Estimated effort or impact required to remediate a finding.
+
+## Finding details
+Granular information describing a specific security finding.
+
+## Asset details
+Information describing an asset involved in an exposure or attack path.
+
+## Weakness details
+Technical attributes explaining why a weakness exists.
+
+## Remediation
+Actions recommended to reduce or eliminate identified risks.
+
+## Identity 360 — Comprehensive Identity Risk Management
+Unified view of identities, relationships, risks, and remediation paths.
+
+## Accounts
+User, service, or computer accounts within Active Directory or connected identity systems.
+
+## Devices
+Endpoints or systems associated with identities.
+
+## Weaknesses
+Security conditions that increase the likelihood of compromise.
+
+## Entitlements
+Privileges or permissions granted to identities.
+
+## Roles
+Defined sets of permissions assigned to identities.
+
+## Groups
+Collections of accounts used to manage permissions.
+
+## Access
+Effective permissions an identity has over resources.
+
+## Exposure Card
+Visual representation summarizing exposure context and severity.
+
+## Relationships
+Connections between identities, devices, permissions, and resources.
+
+## Trail Flow Table
+Chronological representation of identity-related events and changes.
+
+## IoE
+Indicator of Exposure identifying a risky configuration or condition.
+
+## Event
+Recorded change or activity observed in the identity environment.
+
+## Deviant Object
+An object whose configuration deviates from expected security baselines.
+
+## Attribute "ntsecuritydescriptor"
+Active Directory attribute defining permissions and access control.
+
+## Indicators of Exposure
+Rules identifying misconfigurations or risky identity conditions.
+
+## Level of Severity
+Classification indicating the potential impact of a finding.
+
+## Deviance Resolution
+Process of correcting a deviating configuration.
+
+## Detection Date
+Timestamp indicating when an exposure was identified.
+
+## Indicator of Exposure Details
+Detailed context explaining why an indicator was triggered.
+
+## Deviant Objects
+Set of objects affected by a specific exposure.
+
+## Incriminating Attributes
+Attributes contributing directly to a detected risk.
+
+## RSoP-Based Indicators of Exposure
+Indicators derived from Resultant Set of Policy analysis.
+
+## Enhancements
+Improvements or additional capabilities introduced to exposure detection.
+
+## Benefits
+Security and operational advantages gained by using Tenable Identity Exposure.
+
+## Technical Aspects
+Underlying architectural and functional components of the platform.
+
+## Remediate Deviances from Indicators of Exposure
+Guided actions to correct detected deviations.
+
+## AdminCount Attribute Set on Standard Users
+Condition where non-admin accounts inherit protected admin privileges.
+
+## Dangerous Kerberos Delegation
+Misconfigured delegation enabling credential abuse.
+
+## Ensure SDProp Consistency
+Verification that protected object permissions are correctly enforced.
+
+## Indicators of Attack
+Signals indicating active or attempted identity compromise.
+
+## Indicator of Attack Details
+Contextual information explaining an attack indicator.
+
+## Indicators of Attack Incidents
+Correlated attack indicators grouped as incidents.
+
+## Incident Details
+Comprehensive information about a detected security incident.
+
+## Attack Details
+Technical explanation of how an attack is performed.
+
+## YARA Detection Rules
+Pattern-matching rules used to detect malicious activity.
+
+## Attack Path
+Sequence of actions an attacker could take to reach a target asset.
+
+## Blast Radius
+Scope of impact if an attack path is successfully exploited.
+
+## Asset Exposure
+Extent to which an asset can be compromised via attack paths.
+
+## Attack Relations
+Relationships between identities, permissions, and attack techniques.
+
+## Add Member
+Action adding an account to a group.
+
+## Exploitation
+Abuse of a weakness to gain unauthorized access.
+
+## Allowed To Act
+Permission allowing an identity to act on behalf of another.
+
+## Allowed to Act Description
+Explanation of delegated action capability.
+
+## Allowed to Act Exploitation
+Abuse of delegated permissions for privilege escalation.
+
+## Allowed to Act Remediation
+Steps to remove unsafe delegated permissions.
+
+## Allowed To Delegate
+Permission enabling delegation of credentials.
+
+## Allowed To Description
+Explanation of delegation capability.
+
+## Allowed To Exploitation
+Abuse of delegation permissions.
+
+## Allowed To Remediation
+Steps to correct unsafe delegation.
+
+## Belongs To GPO
+Relationship between an object and a Group Policy Object.
+
+## Belongs To Description
+Explanation of GPO linkage.
+
+## Belongs To Exploitation
+Abuse of GPO linkage for privilege escalation.
+
+## Belongs To Remediation
+Steps to correct insecure GPO associations.
+
+## DCSync
+Technique allowing replication of directory secrets.
+
+## DCSync Description
+Explanation of directory replication abuse.
+
+## DCSync Exploitation
+Use of replication rights to extract credentials.
+
+## DCSync Remediation
+Actions to remove unauthorized replication permissions.
