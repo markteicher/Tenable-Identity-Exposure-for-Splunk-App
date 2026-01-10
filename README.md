@@ -153,19 +153,24 @@ Enable ingestion for:
 3. Verify index creation and permissions
 
 ### Step 4: Verify Data Collection
-```spl
+``spl
 index=security_tenable_tie
 | stats count by sourcetype
 
 
+---
 
-# General AD Security References
+## General AD Security References
 This is primarily an exercise for me to organize links and info, but doing it publically as it may be of use to others.  This is a continual work in progress (hopefully).
 
 ## Microsoft Official Guidance:
 - Best Practices for Securing Active Directory:  https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory
-- Securing Domain Controllers Against Attack: https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/securing-domain-controllers-against-attack
-- Monitoring Active Directory for Signs of Compromise: https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/monitoring-active-directory-for-signs-of-compromise
+
+## Securing Domain Controllers Against Attack: 
+- https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/securing-domain-controllers-against-attack
+
+  ## Monitoring Active Directory for Signs of Compromise:
+  - https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/monitoring-active-directory-for-signs-of-compromise
 - Implementing Least-Privilege Administrative Models: https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models
 - Stopping Active Directory Attacks & Other Post-Exploition Behavior with AMSI & Machine Learning: https://www.microsoft.com/security/blog/2020/08/27/stopping-active-directory-attacks-and-other-post-exploitation-behavior-with-amsi-and-machine-learning/
 - Backing Up and Restoring an Active Directory Server: https://docs.microsoft.com/en-us/windows/win32/ad/backing-up-and-restoring-an-active-directory-server
