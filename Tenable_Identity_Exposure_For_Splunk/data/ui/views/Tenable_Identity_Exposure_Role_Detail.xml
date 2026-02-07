@@ -1,0 +1,96 @@
+<!--
+=============================================================================
+ default/data/ui/views/Tenable_Identity_Exposure_Role_Detail.xml
+ Tenable Identity Exposure for Splunk App
+ Role Detail & Permission Breakdown
+=============================================================================
+
+PURPOSE
+
+Displays detailed information for a single Tenable Identity Exposure role
+and its associated permissions.
+
+This view supports access governance and security review by answering:
+
+- What does this role represent?
+- What permissions does the role grant?
+- Which entities and actions are allowed?
+- Is access scoped dynamically or statically?
+
+All fields displayed are sourced directly from the Tenable Identity
+Exposure role detail API response.
+=============================================================================
+-->
+
+<dashboard version="1.1" theme="light">
+  <label>Role Detail</label>
+
+  <!-- =============================================================== -->
+  <!-- ROW 1: ROLE SUMMARY                                            -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Role Overview</title>
+      <table>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:roles
+            | table
+                id
+                name
+                description
+          </query>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">false</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 2: PERMISSION DETAIL                                       -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Permissions</title>
+      <table>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:roles
+            | mvexpand permissions
+            | table
+                permissions.entityName
+                permissions.action
+                permissions.entityIds
+                permissions.dynamicId
+            | sort permissions.entityName permissions.action
+          </query>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">true</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 3: PERMISSION SCOPE ANALYSIS                               -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Permission Scope</title>
+      <chart>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:roles
+            | mvexpand permissions
+            | eval scope=if(isnotnull(permissions.dynamicId),"Dynamic","Static")
+            | stats count by scope
+          </query>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+  </row>
+
+</dashboard>
