@@ -1,0 +1,131 @@
+<!--
+=============================================================================
+ default/data/ui/views/Tenable_Identity_Exposure_Roles.xml
+ Tenable Identity Exposure for Splunk App
+ Roles & Permissions Overview
+=============================================================================
+
+PURPOSE
+
+Displays Tenable Identity Exposure roles and their associated permissions
+ingested into Splunk from the Tenable Identity Exposure platform.
+
+This view supports executive oversight, access governance, and operational
+review by answering:
+
+- What roles exist in Tenable Identity Exposure?
+- What permissions are granted by each role?
+- Which entities and actions are allowed?
+- How is access scoped through static and dynamic identifiers?
+
+All fields displayed are sourced directly from the Tenable Identity
+Exposure roles API response.
+=============================================================================
+-->
+
+<dashboard version="1.1" theme="light">
+  <label>Roles</label>
+
+  <!-- =============================================================== -->
+  <!-- ROW 1: EXECUTIVE SUMMARY                                        -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Total Roles</title>
+      <single>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:roles
+            | stats dc(id)
+          </query>
+        </search>
+        <option name="useColors">true</option>
+        <option name="colorMode">block</option>
+      </single>
+    </panel>
+
+    <panel>
+      <title>Total Permissions</title>
+      <single>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:roles
+            | mvexpand permissions
+            | stats count
+          </query>
+        </search>
+        <option name="useColors">true</option>
+        <option name="colorMode">block</option>
+      </single>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 2: ROLE INVENTORY                                          -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Roles</title>
+      <table>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:roles
+            | table
+                id
+                name
+                description
+            | sort name
+          </query>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">true</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 3: ROLE PERMISSIONS                                        -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Role Permissions</title>
+      <table>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:roles
+            | mvexpand permissions
+            | table
+                name
+                permissions.entityName
+                permissions.action
+                permissions.entityIds
+                permissions.dynamicId
+            | sort name permissions.entityName permissions.action
+          </query>
+        </search>
+        <option name="wrap">true</option>
+      </table>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 4: PERMISSION DISTRIBUTION                                 -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Permissions by Entity</title>
+      <chart>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:roles
+            | mvexpand permissions
+            | stats count by permissions.entityName
+          </query>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.legend.placement">right</option>
+      </chart>
+    </panel>
+  </row>
+
+</dashboard>
