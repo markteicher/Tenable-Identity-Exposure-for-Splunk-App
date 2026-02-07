@@ -1,4 +1,4 @@
-# Tenable Identity Exposure for Splunk
+# Tenable Identity Exposure for Splunk App
 
 
 ⚠️ Disclaimer
