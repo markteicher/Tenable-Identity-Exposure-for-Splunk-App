@@ -1,0 +1,64 @@
+<!--
+=============================================================================
+ default/data/ui/views/Tenable_Identity_alerts.xml
+ Tenable Identity Exposure for Splunk App
+ Alerts
+=============================================================================
+
+PURPOSE
+
+Displays all alert instances retrieved from Tenable Identity Exposure.
+
+This view is intended for operational monitoring and investigation by
+presenting alert state, timing, and scope directly from the platform.
+
+DATA SOURCE
+
+GET /api/profiles/{profileId}/alerts
+→ sourcetype=tenable:identity_exposure:alerts
+
+FIELDS
+
+- id
+- devianceId
+- archived
+- read
+- date
+- directoryId
+- infrastructureId
+
+=============================================================================
+-->
+
+<dashboard version="1.1" theme="light">
+  <label>Alerts</label>
+
+  <!-- =============================================================== -->
+  <!-- ROW 1: ALERT DETAILS                                            -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <table>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:alerts
+            | spath
+            | table
+                id
+                devianceId
+                archived
+                read
+                date
+                directoryId
+                infrastructureId
+            | sort - date
+          </query>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">true</option>
+        <option name="count">25</option>
+      </table>
+    </panel>
+  </row>
+
+</dashboard>
