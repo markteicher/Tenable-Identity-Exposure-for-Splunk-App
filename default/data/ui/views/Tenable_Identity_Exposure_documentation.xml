@@ -1,0 +1,181 @@
+<!--
+=============================================================================
+ default/data/ui/views/Tenable_Identity_Exposure_documentation.xml
+ Tenable Identity Exposure for Splunk App
+ Documentation Hub
+=============================================================================
+
+PURPOSE
+
+Centralized documentation hub for Tenable Identity Exposure concepts,
+capabilities, APIs, and Splunk App usage. This view provides direct links
+to authoritative Tenable Identity Exposure documentation and key
+references used by this app.
+
+=============================================================================
+-->
+
+<dashboard version="1.1" theme="light">
+  <label>Documentation</label>
+
+  <!-- =============================================================== -->
+  <!-- ROW 1: CORE DOCUMENTATION                                       -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Tenable Identity Exposure Documentation</title>
+      <html>
+        <![CDATA[
+        <ul>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure.html" target="_blank">
+              Tenable Identity Exposure Documentation Home
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/WhatIsIdentityExposure.htm" target="_blank">
+              What Is Tenable Identity Exposure
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/IndicatorsOfExposure.htm" target="_blank">
+              Indicators of Exposure
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/IndicatorsOfAttack.htm" target="_blank">
+              Indicators of Attack
+            </a>
+          </li>
+        </ul>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 2: USER GUIDES & DEPLOYMENT                                 -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>User Guides & Deployment</title>
+      <html>
+        <![CDATA[
+        <ul>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/IdentityExposureSaaSUserGuide.htm" target="_blank">
+              Tenable Identity Exposure SaaS User Guide
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/IdentityExposureOnPrem.htm" target="_blank">
+              Tenable Identity Exposure On-Premises User Guides
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/SecureRelaySaaS.htm" target="_blank">
+              Secure Relay Installation & Configuration (SaaS)
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/SecureRelayOnPrem.htm" target="_blank">
+              Secure Relay Installation & Configuration (On-Premises)
+            </a>
+          </li>
+        </ul>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 3: OPERATIONS & ANALYSIS                                    -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Operations & Analysis</title>
+      <html>
+        <![CDATA[
+        <ul>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/AttackPathAnalysis.htm" target="_blank">
+              Attack Path Analysis
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/ExposureOverview.htm" target="_blank">
+              Exposure Overview
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/BestPractices.htm" target="_blank">
+              Best Practices Guide
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure/Content/IndicatorsReference.htm" target="_blank">
+              Indicators Reference Guide
+            </a>
+          </li>
+        </ul>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 4: API REFERENCES                                          -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>API Reference</title>
+      <html>
+        <![CDATA[
+        <ul>
+          <li>
+            <a href="https://developer.tenable.com" target="_blank">
+              Tenable Developer Portal
+            </a>
+          </li>
+          <li>
+            <a href="https://developer.tenable.com/reference" target="_blank">
+              Tenable API Reference
+            </a>
+          </li>
+        </ul>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 5: SPLUNK REFERENCES                                        -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>Splunk References</title>
+      <html>
+        <![CDATA[
+        <ul>
+          <li>
+            <a href="https://docs.splunk.com/Documentation/Splunk/latest/Viz/XMLDashboardReference" target="_blank">
+              Splunk Classic XML Dashboard Reference
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.splunk.com/Documentation/Splunk/latest/Admin/Propsconf" target="_blank">
+              props.conf Reference
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.splunk.com/Documentation/Splunk/latest/Admin/Transformsconf" target="_blank">
+              transforms.conf Reference
+            </a>
+          </li>
+        </ul>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+</dashboard>
