@@ -1,0 +1,156 @@
+<!--
+=============================================================================
+ default/data/ui/views/Tenable_Identity_attacks.xml
+ Tenable Identity Exposure for Splunk App
+ 🧨 Attacks
+=============================================================================
+
+PURPOSE
+
+Presents identity-related attack activity detected by Tenable Identity
+Exposure. This view provides executive visibility into attack volume,
+status, and scope, followed by detailed attack records for investigation.
+
+DATA SOURCE
+
+GET /api/profiles/{profileId}/attacks?resourceType=infrastructure
+→ sourcetype=tenable:identity_exposure:attacks
+
+=============================================================================
+-->
+
+<dashboard version="1.1" theme="light">
+  <label>🧨 Attacks</label>
+
+  <!-- =============================================================== -->
+  <!-- ROW 1: EXECUTIVE SUMMARY                                        -->
+  <!-- =============================================================== -->
+  <row>
+
+    <panel>
+      <title>📊 Total Attacks</title>
+      <single>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:attacks
+            | stats count
+          </query>
+        </search>
+        <option name="useColors">true</option>
+        <option name="colorMode">block</option>
+      </single>
+    </panel>
+
+    <panel>
+      <title>🚨 Open Attacks</title>
+      <single>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:attacks
+            | search isClosed=false
+            | stats count
+          </query>
+        </search>
+        <option name="useColors">true</option>
+        <option name="colorMode">block</option>
+      </single>
+    </panel>
+
+    <panel>
+      <title>✅ Closed Attacks</title>
+      <single>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:attacks
+            | search isClosed=true
+            | stats count
+          </query>
+        </search>
+        <option name="useColors">true</option>
+        <option name="colorMode">block</option>
+      </single>
+    </panel>
+
+    <panel>
+      <title>🏰 Affected Domain Controllers</title>
+      <single>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:attacks
+            | stats dc(dc)
+          </query>
+        </search>
+        <option name="useColors">true</option>
+        <option name="colorMode">block</option>
+      </single>
+    </panel>
+
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 2: ATTACK DISTRIBUTION                                      -->
+  <!-- =============================================================== -->
+  <row>
+
+    <panel>
+      <title>🧭 Attacks by Domain Controller</title>
+      <chart>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:attacks
+            | stats count by dc
+            | sort - count
+          </query>
+        </search>
+        <option name="charting.chart">bar</option>
+        <option name="charting.legend.placement">none</option>
+      </chart>
+    </panel>
+
+    <panel>
+      <title>⏱️ Attacks Over Time</title>
+      <chart>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:attacks
+            | timechart span=1d count
+          </query>
+        </search>
+        <option name="charting.chart">line</option>
+        <option name="charting.legend.placement">none</option>
+      </chart>
+    </panel>
+
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 3: ATTACK DETAILS                                           -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>🔍 Attack Details</title>
+      <table>
+        <search>
+          <query>
+            index=* sourcetype=tenable:identity_exposure:attacks
+            | spath
+            | table
+                date
+                dc
+                attackTypeId
+                source.ip
+                source.hostname
+                destination.ip
+                destination.hostname
+                isClosed
+            | sort - date
+          </query>
+        </search>
+        <option name="wrap">true</option>
+        <option name="rowNumbers">true</option>
+        <option name="count">25</option>
+      </table>
+    </panel>
+  </row>
+
+</dashboard>
