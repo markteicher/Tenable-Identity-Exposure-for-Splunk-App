@@ -1,0 +1,205 @@
+<!--
+=============================================================================
+ default/data/ui/views/Tenable_Identity_Exposure_help.xml
+ Tenable Identity Exposure for Splunk App
+ Help & Documentation
+=============================================================================
+
+PURPOSE
+
+Provides in-app help, context, and reference information for users of the
+Tenable Identity Exposure for Splunk App. This view explains what the app
+does, why it exists, what data it surfaces, and how it is intended to be
+used across executive, operational, and security teams.
+=============================================================================
+-->
+
+<dashboard version="1.1" theme="light">
+  <label>Help</label>
+
+  <!-- =============================================================== -->
+  <!-- ROW 1: PURPOSE                                                 -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>🎯 Purpose</title>
+      <html>
+        <![CDATA[
+        <p>
+          Tenable Identity Exposure allows organizations to secure their
+          infrastructure by addressing identity as a primary attack surface.
+          The platform supports anticipating threats, detecting breaches, and
+          responding to incidents and attacks that involve Active Directory
+          environments.
+        </p>
+
+        <p>
+          Identity systems underpin access to applications, data, and
+          infrastructure. Weaknesses in directory configuration, privilege
+          distribution, delegation models, and trust relationships frequently
+          determine how attacks succeed, how far they spread, and how difficult
+          they are to contain.
+        </p>
+
+        <p>
+          Tenable Identity Exposure provides continuous visibility into Active
+          Directory environments, enabling organizations to monitor identity
+          posture as it exists in practice. This includes observing identities,
+          group memberships, privilege assignments, delegation configurations,
+          and trust relationships as they evolve over time.
+        </p>
+
+        <p>
+          Through centralized dashboards, Tenable Identity Exposure enables
+          security and identity teams to identify the most critical
+          vulnerabilities affecting Active Directory at a glance. These
+          vulnerabilities are presented in context, allowing teams to
+          understand which conditions materially affect security posture and
+          require action.
+        </p>
+
+        <p>
+          For each identified vulnerability, Tenable Identity Exposure provides
+          recommended courses of remediation. This supports a structured
+          approach to reducing identity exposure by linking findings directly
+          to corrective actions within the directory environment.
+        </p>
+
+        <p>
+          Indicators of Exposure surface underlying issues affecting Active
+          Directory, such as excessive privileges, unsafe delegation, and
+          dangerous trust relationships. These indicators highlight systemic
+          weaknesses that increase the likelihood and impact of compromise.
+        </p>
+
+        <p>
+          Indicators of Attack provide visibility into identity-based attack
+          activity. They enable in-depth analysis of how attacks unfold, how
+          access is gained or escalated, and how attackers move through trust
+          relationships and identity paths during an incident.
+        </p>
+
+        <p>
+          The Tenable Identity Exposure for Splunk App surfaces this information
+          directly inside Splunk so Executives, Asset Owners, and operational
+          teams can review, analyze, and act on identity exposure and attack
+          data without logging into the Tenable Identity Exposure interface,
+          learning its workflow, or relying on external BI tools.
+        </p>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 2: WHAT DATA IS SHOWN                                      -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>📊 Data Presented in This App</title>
+      <html>
+        <![CDATA[
+        <ul>
+          <li>Identity objects (users, service accounts, groups)</li>
+          <li>Group membership and nested group relationships</li>
+          <li>Privilege assignments and delegation configurations</li>
+          <li>Trust relationships and trust paths</li>
+          <li>Computed attack paths and escalation chains</li>
+          <li>Indicators of Exposure</li>
+          <li>Indicators of Attack</li>
+          <li>Directory posture findings</li>
+          <li>Platform audit and processing metadata</li>
+        </ul>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 3: HOW TO USE THIS APP                                     -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>🧭 How This App Is Used</title>
+      <html>
+        <![CDATA[
+        <p>
+          This app is designed for both executive consumption and operational
+          analysis.
+        </p>
+
+        <ul>
+          <li>
+            Executives use the dashboards to understand identity risk,
+            concentration of exposure, and progress over time.
+          </li>
+          <li>
+            Security and identity teams use the dashboards and searches to
+            investigate exposure, analyze attack paths, and validate
+            remediation impact.
+          </li>
+          <li>
+            Asset Owners use the app to understand how identity exposure
+            affects the systems they are responsible for.
+          </li>
+        </ul>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 4: SPLUNK CONTEXT                                          -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>🔗 Why Splunk</title>
+      <html>
+        <![CDATA[
+        <p>
+          Splunk serves as the central analysis and reporting platform for
+          identity exposure data alongside vulnerability, endpoint, cloud,
+          and infrastructure telemetry.
+        </p>
+
+        <p>
+          By surfacing Tenable Identity Exposure data inside Splunk, this app
+          enables correlation with other security signals and removes the need
+          for separate dashboards, custom queries, or external reporting tools.
+        </p>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+  <!-- =============================================================== -->
+  <!-- ROW 5: DOCUMENTATION                                          -->
+  <!-- =============================================================== -->
+  <row>
+    <panel>
+      <title>📚 Documentation</title>
+      <html>
+        <![CDATA[
+        <ul>
+          <li>
+            <a href="https://docs.tenable.com/identity-exposure.html" target="_blank">
+              Tenable Identity Exposure Documentation
+            </a>
+          </li>
+          <li>
+            <a href="https://developer.tenable.com" target="_blank">
+              Tenable Developer Portal
+            </a>
+          </li>
+          <li>
+            <a href="https://docs.splunk.com" target="_blank">
+              Splunk Documentation
+            </a>
+          </li>
+        </ul>
+        ]]>
+      </html>
+    </panel>
+  </row>
+
+</dashboard>
