@@ -1,4 +1,6 @@
-![Tenable-Identity-Exposure-for-Splunk-App](../docs/images/tenable_identity_exposure_logo.jpg)
+![Tenable-Identity-Exposure-for-Splunk-App](docs/images/tenable_identity_exposure_logo.jpg)
+
+
 # Tenable Identity Exposure for Splunk App
 
 
