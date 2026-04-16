@@ -19,7 +19,7 @@ Full Splunk App for **Tenable Identity Exposure**.
 
 Tenable Identity Exposurea allows an organization to secure their infrastructure by  anticipating threats, detecting breaches, and responding to incidents and attacks. 
 
-Using intuitive Splunk dashboards to monitor Active Directory potential issues in near real-time.  Organizations can view at a galnce most critical vulnerabilities and recommended course of action.  
+Using intuitive Splunk dashboards to monitor Active Directory potential issues in near real-time.  Organizations can view at a glance most critical vulnerabilities and recommended course of action.  
 
 This specialized Tenable Identity Exposure for Splunk App allows for viewing Indicators of Attack, Indicators of Exposure allowing for drill down potential underlying issues affecting an organization's Active Directory, identification dangerous trust relationships, in-depth details of attacks, including operational visibility, analytical visibility into Active Directory identity risk, exposure indicators, attack indicators, privileged access, and administrative activity using Tenable Identity Exposure APIs beyond administrator-only access and enable Splunk-based analytics, correlation, and visualization.
 
