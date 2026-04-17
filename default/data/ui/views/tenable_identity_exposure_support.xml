@@ -1,0 +1,144 @@
+<!--
+=============================================================================
+ default/data/ui/views/tenable_identity_exposure_support.xml
+ Tenable Identity Exposure Support Hub
+ Support Hub (tile layout)
+=============================================================================
+-->
+<dashboard version="1.1" theme="light">
+  <label>📚 Tenable Identity Exposure Support Hub</label>
+
+  <row>
+    <panel>
+      <html>
+
+        <style>
+          .portal-grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:22px;
+            margin-top:20px;
+          }
+          .portal-tile{
+            background:#ffffff;
+            border:1px solid #e5e5e5;
+            border-radius:8px;
+            padding:22px;
+            text-align:center;
+            transition:all .18s ease;
+          }
+          .portal-tile:hover{
+            box-shadow:0 4px 14px rgba(0,0,0,.18);
+            transform:translateY(-2px);
+          }
+          .portal-icon{font-size:34px;margin-bottom:10px;}
+          .portal-title{font-size:15px;font-weight:600;}
+          .portal-link{text-decoration:none;color:inherit;display:block;}
+        </style>
+
+        <div class="portal-grid">
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📘</div>
+              <div class="portal-title">Tenable Identity Exposure Documentation</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/best-practices/Content/BPG/getting-support.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🆘</div>
+              <div class="portal-title">Getting Support</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/Content/Admin/Troubleshooting/troubleshooting.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🛠️</div>
+              <div class="portal-title">Troubleshooting Tenable Identity Exposure</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/Content/Admin/Troubleshooting/diagnostics_tool.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🧪</div>
+              <div class="portal-title">Tenable Identity Exposure Diagnostics Tool</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/Install/Troubleshoot_onprem/Logs.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📜</div>
+              <div class="portal-title">Logs for Troubleshooting</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/release-notes/Content/identity-exposure/onprem/tenablead.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📝</div>
+              <div class="portal-title">Tenable Identity Exposure Release Notes</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://www.tenable.com/support" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📞</div>
+              <div class="portal-title">Technical Support</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://connect.tenable.com/" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">💬</div>
+              <div class="portal-title">Tenable Connect</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://connect.tenable.com/category/support/kb/tenable-connect-support" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🧭</div>
+              <div class="portal-title">Tenable Connect Support</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://www.tenable.com/contact/customers" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">👥</div>
+              <div class="portal-title">Existing Customers</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://www.tenable.com/products/how-to-access" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🔐</div>
+              <div class="portal-title">How to Access Your Tenable Products</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://connect.tenable.com/signin" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🔑</div>
+              <div class="portal-title">Tenable Connect Sign In</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://connect.tenable.com/c/self-register/page" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📝</div>
+              <div class="portal-title">Tenable Connect Registration</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://connect.tenable.com/kb/tenable-connect-support/customer-care-guide/13" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📋</div>
+              <div class="portal-title">Customer Care Guide</div>
+            </div>
+          </a>
+
+        </div>
+
+      </html>
+    </panel>
+  </row>
+</dashboard>
