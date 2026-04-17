@@ -1,0 +1,151 @@
+<!--
+=============================================================================
+ default/data/ui/views/tenable_identity_exposure_secure_relay_documentation.xml
+ Tenable Identity Exposure Secure Relay Documentation Hub
+ Documentation Hub (tile layout)
+=============================================================================
+-->
+<dashboard version="1.1" theme="light">
+  <label>📚 Tenable Identity Exposure Secure Relay Documentation Hub</label>
+
+  <row>
+    <panel>
+      <html>
+
+        <style>
+          .portal-grid{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:22px;
+            margin-top:20px;
+          }
+          .portal-tile{
+            background:#ffffff;
+            border:1px solid #e5e5e5;
+            border-radius:8px;
+            padding:22px;
+            text-align:center;
+            transition:all .18s ease;
+          }
+          .portal-tile:hover{
+            box-shadow:0 4px 14px rgba(0,0,0,.18);
+            transform:translateY(-2px);
+          }
+          .portal-icon{font-size:34px;margin-bottom:10px;}
+          .portal-title{font-size:15px;font-weight:600;}
+          .portal-link{text-decoration:none;color:inherit;display:block;}
+        </style>
+
+        <div class="portal-grid">
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/deployment_roadmap.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🧭</div>
+              <div class="portal-title">Get Started with Tenable Identity Exposure 3.77 On-Premises</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/release-notes/Content/identity-exposure/onprem/2024.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📝</div>
+              <div class="portal-title">Release Notes</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/Install/Technical_Prerequisites/Architecture.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🏗️</div>
+              <div class="portal-title">On-Premises Architectures</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/Install/Technical_Prerequisites/predeployment.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📋</div>
+              <div class="portal-title">Pre-deployment Requirements</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/SecureRelay/secure_relay_installation.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🚀</div>
+              <div class="portal-title">Secure Relay Installation</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/SecureRelay/secure_relay_requirements.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📐</div>
+              <div class="portal-title">Secure Relay Requirements</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/SecureRelay/secure_relay_architectures.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🏢</div>
+              <div class="portal-title">Secure Relay Architectures</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/best-practices/Content/Install/Technical%20Prerequisites/network_flow_matrix.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🔀</div>
+              <div class="portal-title">Network Flow Matrix</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/SecureRelay/secure_relay_configuration.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">⚙️</div>
+              <div class="portal-title">Configure the Relay</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/SecureRelay/secure_relay_faq.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">❓</div>
+              <div class="portal-title">Secure Relay FAQ</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/SecureRelay/troubleshoot_secure_relay_install.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🛠️</div>
+              <div class="portal-title">Troubleshoot Secure Relay Installation</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/Install/Upgrade_onprem/restart_services.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🔄</div>
+              <div class="portal-title">Restart Services</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/Install/Troubleshoot_onprem/Logs.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">📜</div>
+              <div class="portal-title">Logs for Troubleshooting</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/best-practices/Content/postdeployment_tasks.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">✅</div>
+              <div class="portal-title">Post-deployment Tasks</div>
+            </div>
+          </a>
+
+          <a class="portal-link" href="https://docs.tenable.com/identity-exposure/on-premises/3_77/Content/Admin/Legal/UpdateLicense.htm" target="_blank">
+            <div class="portal-tile">
+              <div class="portal-icon">🔑</div>
+              <div class="portal-title">Tenable Identity Exposure Licensing</div>
+            </div>
+          </a>
+
+        </div>
+
+      </html>
+    </panel>
+  </row>
+</dashboard>
